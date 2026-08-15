@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janitorial & Facility Services | Calloway Holdings</title>
+  <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Calloway Holdings Home">
+        <img src="assets/images/branding/herologo.png" alt="Calloway Holdings" class="brand-logo">
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section-padding bg-light text-center">
+    <div class="container">
+      <span class="status-badge status-active" style="display: inline-block; margin-bottom: 12px;">Active Service Division</span>
+      <h1>Commercial Janitorial & Sanitation Request</h1>
+      <p style="max-width: 650px; margin: 12px auto 0;">Custom cleaning solutions tailored for corporate offices, commercial venues, and high-traffic facilities. Request scope overview or quote below.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE REQUEST FORM SECTION -->
+  <section class="section-padding container">
+    <div style="max-width: 720px; margin: 0 auto; background: #ffffff; padding: 36px; border-radius: 8px; border: 1px solid var(--color-border, #e2e8f0); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      <h2 style="margin-bottom: 8px;">Facility Service Request Form</h2>
+      <p style="margin-bottom: 24px; color: var(--color-text-muted, #666);">Please submit your facility specifications. Our operations team will review your scope and follow up within 24 business hours.</p>
+
+      <form class="custom-form" id="serviceForm" action="https://formsubmit.co/contact.callowayofficial@gmail.com" method="POST">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" value="New Janitorial Service Request - Calloway Holdings">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" class="form-input" name="Full Name" placeholder="Jane Doe" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="company">Company / Facility Name *</label>
+          <input type="text" id="company" class="form-input" name="Company Name" placeholder="Acme Logistics Corp" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" class="form-input" name="Email" placeholder="jane@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" class="form-input" name="Phone" placeholder="(555) 555-5555" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Requested Service Vertical *</label>
+          <select id="service" class="form-input" name="Service Requested" required>
+            <option value="Commercial Janitorial & Facility Cleaning" selected>Commercial Janitorial & Facility Cleaning</option>
+            <option value="Event & Venue Sanitation">Event & Venue Sanitation</option>
+            <option value="Other Enterprise Facility Request">Other Enterprise Facility Request</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Facility Details & Scope Requirements *</label>
+          <textarea id="message" class="form-input" name="Facility Details" rows="4" placeholder="Square footage, service frequency, or specific facility needs..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-navy" style="width: 100%;">Submit Service Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/branding/footer-logo.png" alt="Calloway Holdings" class="footer-logo">
+        </a>
+        <p>Commercial Facilities & Property Operations</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Services & Contact</h4>
+        <ul>
+          <li><a href="janitorial.html">Janitorial Service Form</a></li>
+          <li><a href="contact.html">General Inquiries</a></li>
+          <li><p style="margin-top: 8px;">contact.callowayofficial@gmail.com</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>&copy; 2026 Calloway Holdings. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

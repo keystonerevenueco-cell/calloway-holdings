@@ -1,283 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calloway Holdings provides comprehensive commercial facility solutions, property preservation, and site management platforms.">
-    <title>Calloway Holdings | Enterprise Commercial Services Platform</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calloway Holdings | Commercial Facility Management & Brokerage</title>
+  <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="#home" class="brand-link" aria-label="Calloway Holdings Home">
-                <img src="logo-holdings.png" alt="Calloway Holdings" class="brand-logo">
-            </a>
-            
-            <nav class="nav-menu" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Calloway Holdings Home">
+        <img src="assets/images/branding/herologo.png" alt="Calloway Holdings" class="brand-logo">
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link active-nav">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SLIDESHOW SECTION -->
+  <section class="hero-carousel-section" id="hero-carousel">
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+
+        <!-- Slide 1: Mission -->
+        <div class="carousel-slide">
+          <img src="hero/hero-slide-1.jpg" alt="Calloway Mission" class="slide-img">
+          <div class="hero-overlay"></div>
+          <div class="container hero-slide-container">
+            <div class="floating-hero-card">
+              <span class="badge-active-division">OUR MISSION</span>
+              <h1 class="card-heading">Inspire Quality,<br>Elevate Every Space</h1>
+              <p class="card-subtext">Commercial property care built on dependable crews, clear communication, and consistent quality.</p>
+              <a href="janitorial.html" class="btn btn-navy">Request Service</a>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <main id="home">
-        <!-- HERO SECTION -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content fade-in">
-                    <h1>Comprehensive Commercial Facility & Property Solutions.</h1>
-                    <p class="hero-lead">Calloway Holdings delivers single-source commercial facility maintenance, specialized site management, and operational support built to power enterprise infrastructure.</p>
-                    <div class="hero-actions">
-                        <a href="#services" class="btn btn-navy">Explore Platform Divisions</a>
-                        <a href="#capabilities" class="btn btn-outline">Commercial Capabilities</a>
-                    </div>
-                </div>
+        <!-- Slide 2: Facility Operations -->
+        <div class="carousel-slide">
+          <img src="hero/hero-slide-2.jpg" alt="Property Operations" class="slide-img">
+          <div class="hero-overlay"></div>
+          <div class="container hero-slide-container">
+            <div class="floating-hero-card">
+              <span class="badge-active-division">FACILITY OPERATIONS</span>
+              <h1 class="card-heading">Dependable Facility<br>Care & Oversight</h1>
+              <p class="card-subtext">Keeping commercial properties clean, operational, and safe for occupants and visitors every day.</p>
+              <a href="about.html" class="btn btn-navy">About Our Team</a>
             </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="about-section" id="about">
-            <div class="container">
-                <div class="about-grid fade-in">
-                    <div class="about-headline">
-                        <span class="section-kicker">Corporate Platform</span>
-                        <h2>Institutional Oversight.<br>Consistent Execution.</h2>
-                    </div>
-                    <div class="about-body">
-                        <p>Calloway Holdings manages specialized commercial service operations designed for corporate real estate, commercial venues, industrial properties, and enterprise facility networks.</p>
-                        <p>By pairing rigorous quality governance with multi-sector operational capability, we ensure commercial properties maintain pristine, compliant, and operational environments year-round.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FEATURED DIVISION (JANITORIAL) -->
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <span class="section-kicker">Featured Operating Division</span>
-                    <h2>Commercial Janitorial</h2>
-                </div>
-                
-                <div class="division-card fade-in">
-                    <div class="division-card-header">
-                        <div class="division-brand">
-                            <img src="logo-janitorial.png" alt="Calloway Commercial Janitorial" class="division-logo">
-                        </div>
-                        <span class="status-indicator">Active Division</span>
-                    </div>
-
-                    <div class="division-card-body">
-                        <h3>Janitorial & Event Sanitation</h3>
-                        <p class="division-subhead">Dedicated cleaning and maintenance solutions for enterprise environments.</p>
-                        <p class="division-text">Our flagship janitorial division delivers high-performance facility maintenance, recurring office cleaning, venue event staging, and specialized surface care designed around core business schedules.</p>
-
-                        <div class="janitorial-info-grid">
-                            <div class="info-block">
-                                <h4>Office & Administrative Buildings</h4>
-                                <p>Routine maintenance, workstation sanitization, and suite care for corporate spaces.</p>
-                            </div>
-
-                            <div class="info-block">
-                                <h4>Commercial Events & Venues</h4>
-                                <p>Pre-event staging, dedicated event staffing, and rapid post-event restoration.</p>
-                            </div>
-
-                            <div class="info-block">
-                                <h4>Restroom & Common Areas</h4>
-                                <p>High-frequency hygiene management, deep sanitization, and supply maintenance.</p>
-                            </div>
-
-                            <div class="info-block">
-                                <h4>Scheduled Programs</h4>
-                                <p>Custom daily, weekly, or after-hours routines engineered to avoid operational downtime.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- UNIVERSAL CAPABILITIES GRID -->
-        <section class="capabilities-section" id="capabilities">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <span class="section-kicker">Platform Verticals</span>
-                    <h2>Commercial Capability Portfolio</h2>
-                    <p class="section-desc">Calloway Holdings oversees specialized commercial property service divisions. <strong>Commercial Janitorial</strong> is currently active, with additional operational verticals undergoing upcoming rollout.</p>
-                </div>
-
-                <div class="capabilities-grid fade-in">
-                    <div class="capability-card active-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">01</span>
-                            <span class="status-tag status-active">Active Service</span>
-                        </div>
-                        <h3>Janitorial & Event Cleaning</h3>
-                        <p>Premier venue maintenance, event staging, and recurring commercial facility sanitization.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">02</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Commercial Junk Removal</h3>
-                        <p>Complete bulk debris removal, office cleanouts, and commercial site asset clearing.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">03</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Fleet Washing & Detailing</h3>
-                        <p>Mobile commercial fleet washing, equipment cleaning, and dealership vehicle detailing support.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">04</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Kitchen Exhaust Hood Care</h3>
-                        <p>Specialized commercial kitchen exhaust maintenance, hood cleaning, and compliance care.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">05</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Carpet & Floor Care</h3>
-                        <p>Heavy-use commercial carpet restoration, tile stripping, waxing, and hard floor preservation.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">06</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Post-Construction Cleanup</h3>
-                        <p>Multi-phase rough, final, and touch-up post-construction cleaning for commercial builds.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">07</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Vacant Property Preservation</h3>
-                        <p>Trash-out services, site stabilization, and property preservation for vacant commercial spaces.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">08</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Epoxy & Concrete Coatings</h3>
-                        <p>High-durability garage floor epoxy, concrete sealing, and commercial surface coatings.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">09</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Snow & Ice Management</h3>
-                        <p>24/7 winter site clearing, de-icing, and seasonal hazard mitigation for business parks.</p>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="card-status-bar">
-                            <span class="cap-icon">10</span>
-                            <span class="status-tag status-upcoming">Coming Soon</span>
-                        </div>
-                        <h3>Parking & Valet Logistics</h3>
-                        <p>24/7 commercial parking coordination, site traffic control, and professional valet logistics.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="contact-box fade-in">
-                    <div class="contact-info">
-                        <span class="section-kicker">Corporate Inquiries</span>
-                        <h2>Let's Discuss Your Facility.</h2>
-                        <p>Contact our operations team to discuss facility support, multi-site management, or regional service coordination.</p>
-                    </div>
-                    
-                    <div class="contact-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Phone</span>
-                            <span class="meta-value">(321) 525-5288</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Email</span>
-                            <span class="meta-value">contact.callowayofficial@gmail.com</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Coverage</span>
-                            <span class="meta-value">Regional Commercial Facilities</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand-col">
-                    <a href="#home" class="brand-link footer-logo-wrap">
-                        <img src="logo-holdings.png" alt="Calloway Holdings" class="footer-logo">
-                    </a>
-                    <p class="footer-about">Calloway Holdings provides professional commercial facility services designed to maintain clean, functional, and well-managed environments.</p>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#capabilities">Capabilities</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h4>Governance</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-legal">
-                <p>&copy; 2026 Calloway Holdings. All rights reserved.</p>
-                <p class="footer-type">Commercial Services Platform</p>
-            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Slide 3: Active Division -->
+        <div class="carousel-slide active-slide">
+          <img src="hero/hero-slide-3.jpg" alt="Janitorial Division Team" class="slide-img">
+          <div class="hero-overlay"></div>
+          <div class="container hero-slide-container">
+            <div class="floating-hero-card">
+              <span class="badge-active-division">ACTIVE DIVISION</span>
+              <h1 class="card-heading">Commercial Janitorial<br>& Sanitation</h1>
+              <p class="card-subtext">Custom cleaning schedules for offices, commercial venues, and high-traffic public facilities.</p>
+              <a href="janitorial.html" class="btn btn-navy">Explore Cleaning Scope</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Property Partnerships -->
+        <div class="carousel-slide">
+          <img src="hero/hero-slide-4.jpg" alt="Trusted Partnership" class="slide-img">
+          <div class="hero-overlay"></div>
+          <div class="container hero-slide-container">
+            <div class="floating-hero-card">
+              <span class="badge-active-division">PROPERTY PARTNERSHIPS</span>
+              <h1 class="card-heading">Built on Honesty<br>& Execution</h1>
+              <p class="card-subtext">Vetted teams focused on maintaining the visual appeal and physical value of your facility.</p>
+              <a href="contact.html" class="btn btn-navy">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4 Navigation Dots -->
+    <div class="carousel-dots">
+      <button class="dot" data-slide="0" aria-label="Slide 1"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot active" data-slide="2" aria-label="Slide 3"></button>
+      <button class="dot" data-slide="3" aria-label="Slide 4"></button>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon">✓</span> Commercial Grade Equipment</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> Insured & Vetted Staff</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> Flexible Off-Hours Care</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> Dedicated Account Managers</div>
+    </div>
+  </section>
+
+  <!-- ABOUT FEATURE -->
+  <section class="section-padding container">
+    <div class="media-text-grid">
+      <div class="media-block">
+        <img src="pages/about-leadership.jpg" alt="Calloway Operations Leadership" class="rounded-media-img">
+      </div>
+      <div class="text-block">
+        <span class="section-kicker">Who We Are</span>
+        <h2>Hands-On Facility Care You Can Count On</h2>
+        <p>At Calloway Holdings, we take pride in taking work off your plate. Whether it's daily office cleaning, event cleanup, or recurring maintenance, our team handles the details so your business presents its best face to clients and employees.</p>
+        <p>We combine organized operations with reliable crew management to deliver high standards across every square foot.</p>
+        <a href="about.html" class="btn btn-outline" style="margin-top: 16px;">Read Our Full Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES DIVISION GRID -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-kicker">Commercial Portfolio</span>
+        <h2>Active Services & Expansion Divisions</h2>
+      </div>
+
+      <div class="divisions-grid">
+        
+        <!-- 1. ACTIVE SERVICE: JANITORIAL & SANITATION -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-active">Active Service</span>
+            <img src="services/feature-janitorial.jpg" alt="Commercial Janitorial Services" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Commercial Janitorial & Sanitation</h3>
+            <p>Institutional-grade facility cleaning, recurring office care, restroom hygiene, floor scrubbing, and rapid venue restoration.</p>
+            <a href="janitorial.html" class="btn btn-navy">Open Service Request Form</a>
+          </div>
+        </div>
+
+        <!-- 2. COMING SOON: REAL ESTATE OPERATIONS -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/feature-realestate.jpg" alt="Real Estate & Asset Operations" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Commercial Real Estate Operations</h3>
+            <p>Expanding into direct property portfolio oversight, tenant management, and physical asset preservation.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 3. COMING SOON: COUNTRY-WIDE JUNK REMOVAL -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-junk-removal.jpg" alt="Country-Wide Junk Removal Service" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Country-Wide Commercial Junk Removal</h3>
+            <p>Bulk waste haul-away, office cleanouts, equipment disposal, and scheduled commercial site debris clearance nationwide.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 4. COMING SOON: FLEET WASHING & DETAILING -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-fleet-washing.jpg" alt="Commercial Fleet Washing & Detailing" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Fleet Washing & Dealership Detailing</h3>
+            <p>Nationwide mobile pressure washing brokerage for logistics fleets, delivery vehicles, and auto dealership inventory.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 5. COMING SOON: KITCHEN EXHAUST HOOD MAINTENANCE -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-kitchen-hood.jpg" alt="Kitchen Exhaust Hood Maintenance" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Kitchen Exhaust Hood Maintenance</h3>
+            <p>NFPA-compliant grease removal, duct cleaning, and hood system maintenance for commercial kitchens and dining venues.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 6. COMING SOON: CARPET & FLOOR CARE BROKERAGE -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-floor-care.jpg" alt="Carpet & Floor Care Maintenance" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Commercial Floor Care & Carpet Extraction</h3>
+            <p>Specialized high-traffic carpet extraction, terrazzo restoration, tile/grout scrubbing, and floor waxing solutions.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 7. COMING SOON: POST-CONSTRUCTION CLEANUP -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-post-construction.jpg" alt="Post-Construction Cleanup" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Post-Construction Site Cleanup</h3>
+            <p>Multi-phase final cleaning for commercial builds, tenant buildouts, renovation sites, and general contractor turn-overs.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 8. COMING SOON: VACANT PROPERTY TRASH-OUT -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-trashout.jpg" alt="Vacant Property Trash-Out & Preservation" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Vacant Property Trash-Out & Preservation</h3>
+            <p>Full property remediation, interior cleanouts, structural securing, and asset protection for vacant commercial real estate.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 9. COMING SOON: VENUE JANITORIAL & EVENT SANITATION -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-event-cleaning.jpg" alt="Venue Janitorial & Event Sanitation" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Nationwide Event & Venue Sanitation</h3>
+            <p>Dedicated event porter services, stadium cleanups, trade show staging, and rapid post-event venue turnaround.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+        <!-- 10. COMING SOON: GARAGE EPOXY & CONCRETE COATINGS -->
+        <div class="division-card">
+          <div class="card-img-wrap">
+            <span class="status-badge status-coming-soon">Coming Soon</span>
+            <img src="services/service-epoxy-coating.jpg" alt="Garage Floor Epoxy & Concrete Coatings" class="card-img">
+          </div>
+          <div class="card-body">
+            <h3>Garage Floor Epoxy & Concrete Coatings</h3>
+            <p>High-durability resinous floor installation, commercial garage coatings, and industrial concrete sealant solutions.</p>
+            <button class="btn btn-disabled" disabled>Expansion In Progress</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/branding/footer-logo.png" alt="Calloway Holdings" class="footer-logo">
+        </a>
+        <p>Commercial Facilities & Property Operations</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Services & Contact</h4>
+        <ul>
+          <li><a href="janitorial.html">Janitorial Service Form</a></li>
+          <li><a href="contact.html">General Inquiries</a></li>
+          <li><p style="margin-top: 8px;">contact.callowayofficial@gmail.com</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>&copy; 2026 Calloway Holdings. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS linked to assets/js/main.js -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
