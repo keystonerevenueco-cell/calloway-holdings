@@ -178,12 +178,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- 6. FORM VALIDATION FOR ALL FORMS ---
+    // --- 6. FORM VALIDATION & AJAX SUBMISSION ---
     const forms = document.querySelectorAll('form');
 
     forms.forEach(form => {
         const requiredInputs = form.querySelectorAll('[required]');
 
+        // Clear error highlights as user types
         requiredInputs.forEach(input => {
             input.addEventListener('input', function() {
                 const parentGroup = this.closest('.form-group');
@@ -194,6 +195,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop native navigation / formsubmit redirect
+
             let isValid = true;
 
             form.querySelectorAll('.form-group').forEach(group => {
@@ -210,10 +213,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // If validation fails, stop form submission
-            if (!isValid) {
-                e.preventDefault();
+            if (!isValid) return;
+
+            // Submit button UI state update
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerText = 'Sending...';
             }
+
+            // AJAX submission directly to FormSubmit
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Redirect to site's custom thank-you page
+                    window.location.href = 'thank-you.html';
+                } else {
+                    alert('There was an issue submitting your form. Please check your fields and try again.');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = originalBtnText;
+                    }
+                }
+            })
+            .catch(() => {
+                alert('Connection error. Please check your network and try again.');
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = originalBtnText;
+                }
+            });
         });
     });
 
